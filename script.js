@@ -226,20 +226,24 @@ function initMobileMenu() {
     if (menuBtn) {
         menuBtn.addEventListener('click', () => {
             menuBtn.classList.toggle('active');
-            
+
             // Create mobile menu if it doesn't exist
             let mobileMenu = document.querySelector('.mobile-menu');
-            
+
             if (!mobileMenu) {
                 mobileMenu = document.createElement('div');
                 mobileMenu.className = 'mobile-menu';
-                mobileMenu.innerphp = `
+
+                // NOTE: innerHTML was previously spelled as "innerhtml",
+                // which meant the menu was never actually created.
+                // Fixing that here so the menu shows on mobile.
+                mobileMenu.innerHTML = `
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#mission">Mission</a></li>
                         <li><a href="#impact">Impact</a></li>
                         <li><a href="#advertise">Advertise</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="distribute.html">Distribute</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
                         <li><a href="#subscribe" class="mobile-cta">Get a quote</a></li>
                     </ul>
                 `;
