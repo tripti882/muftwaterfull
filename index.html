@@ -1,5 +1,5 @@
-<!DOCTYPE php>
-<php lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +22,10 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="advertise.php">Advertise</a></li>
-                                <li><a href="index.php#impact">Impact</a></li>
-                <li><a href="distribute.php">Distribute</a></li>
-                <li><a href="contact-us.php">Contact</a></li>
+                <li><a href="advertise.html">Advertise</a></li>
+                <li><a href="index.html#impact">Impact</a></li>
+                <li><a href="distribute.html">Distribute</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
             </ul>
             <a href="#subscribe" class="nav-cta">Get a quote</a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
@@ -54,7 +54,7 @@
                 Your brand doesn’t just get seen — it gets remembered, scanned, and acted upon.
             </p>
             <div class="hero-cta">
-                <a href="advertise.php" class="btn btn-primary">
+                <a href="advertise.html" class="btn btn-primary">
                     <span>Advertise With Us</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -305,7 +305,7 @@
             <div class="sustainability-content">
                 <div class="sustainability-visual">
                     <div class="sustainability-image">
-                        <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=600&h=500&fit=crop" 
+                        <img src="assets/images/WhatsApp Image 2026-01-28 at 2.16.59 PM.jpeg" 
                              alt="Eco-friendly water bottles"
                              class="eco-main-image">
                     </div>
@@ -453,7 +453,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="advertise.php" class="btn btn-primary">Become a Partner</a>
+                    <a href="advertise.html" class="btn btn-primary">Become a Partner</a>
                 </div>
                 <div class="advertise-visual">
                     <div class="advertise-image">
@@ -508,9 +508,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-
-    <!-- Success Modal -->
+        <!-- Success Modal -->
     <div class="modal" id="successModal">
         <div class="modal-content">
             <div class="modal-icon">✓</div>
@@ -519,8 +517,28 @@
             <button class="btn btn-primary" onclick="closeModal()">Got it!</button>
         </div>
     </div>
-<?php include 'footer.php'; ?>
+
+        <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h3>You're on the list!</h3>
+            <p>We'll notify you when Muftwater is available in your area.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Got it!</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
-</php>
+</html>
