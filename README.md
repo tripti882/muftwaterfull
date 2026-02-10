@@ -50,9 +50,9 @@ Create MySQL database muftwater
 
 Import SQL file
 
-Run: http://localhost/muftwater
 
 🏷 Tagline
 
 MuftWater – Free Drinking Water. Real Brand Reach
+
 
