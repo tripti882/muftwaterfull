@@ -90,7 +90,7 @@ $jobs = [
             <ul class="nav-links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="advertise.php">Advertise</a></li>
-                <li><a href="index.php#impact">Impact</a></li>
+                <!-- <li><a href="index.php#impact">Impact</a></li> -->
                 <li><a href="distribute.php">Distribute</a></li>
                 <li><a href="contact-us.php">Contact</a></li>
             </ul>

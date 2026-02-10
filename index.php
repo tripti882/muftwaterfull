@@ -25,7 +25,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="advertise.php">Advertise</a></li>
-                <li><a href="index.php#impact">Impact</a></li>
+                <!-- <li><a href="index.php#impact">Impact</a></li> -->
                 <li><a href="distribute.php">Distribute</a></li>
                 <li><a href="contact-us.php">Contact</a></li>
             </ul>
@@ -64,7 +64,7 @@
                 </a>
                 <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
             </div>
-            <div class="hero-stats">
+            <!-- <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number">Real</span>
                     <span class="stat-label">Physical Impressions</span>
@@ -77,7 +77,7 @@
                     <span class="stat-number">Measured</span>
                     <span class="stat-label">Leads & Results</span>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="hero-visual">
             <div class="hero-image-container">
@@ -87,13 +87,13 @@
                 <div class="hero-image-glow"></div>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <!-- <div class="scroll-indicator">
             <span>Scroll to explore</span>
             <div class="scroll-arrow"></div>
-        </div>
+        </div> -->
     </section>
 
-    <!-- Trusted By Section -->
+    <!-- Trusted By Section
     <section class="trusted-by">
         <div class="container">
             <p class="trusted-label">Trusted by leading brands worldwide</p>
@@ -114,7 +114,7 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
    <!-- Features Section -->
@@ -184,7 +184,7 @@
 
     <!-- (Distribute section moved to separate page) -->
 
-    <!-- Gallery Section -->
+    <!-- Gallery Section
     <section class="gallery">
         <div class="container">
             <div class="section-header center">
@@ -193,37 +193,83 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item large">
-<img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&h=600&q=80" alt="Free Drinking Water Distribution">
+                    <img src="assets/images/coching_class.jpeg" alt="Free Drinking Water Distribution">
                     <div class="gallery-overlay">
-                        <span>Community Distribution</span>
+                        <span>coaching classes Distribution</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=400&fit=crop" alt="Clean water well">
+                    <img src="assets/images/corparate_offices.jpeg" alt="Clean water well">
                     <div class="gallery-overlay">
-                        <span>Well Construction</span>
+                        <span>corparate istruction</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1527383418406-f85a3b146499?w=400&h=400&fit=crop" alt="Fresh water source">
+                    <img src="assets/images/evert_epark.jpeg" alt="Fresh water source">
                     <div class="gallery-overlay">
                         <span>Fresh Springs</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop" alt="Mountain water source">
+                    <img src="assets/images/metro_station.jpeg" alt="Mountain water source">
                     <div class="gallery-overlay">
                         <span>Natural Sources</span>
                     </div>
                 </div>
                 <div class="gallery-item large">
-                    <img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?w=800&h=600&fit=crop" alt="Team volunteering">
+                    <img src="assets/images/public_park.jpeg" alt="Team volunteering">
                     <div class="gallery-overlay">
                         <span>Our Volunteers</span>
                     </div>
                 </div>
             </div>
+        </div> -->
+<!-- Gallery Section -->
+<section class="gallery">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-tag">Our Work on Ground</span>
+      <h2 class="section-title">Free Water Where People Need It Most</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item large">
+        <img src="assets/images/coching_class.jpeg" alt="Water distribution at coaching centers">
+        <div class="gallery-overlay">
+          <span>Water Distribution at Coaching Centers</span>
         </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/corparate_offices.jpeg" alt="Water distribution at corporate offices">
+        <div class="gallery-overlay">
+          <span>Corporate Office Campaigns</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/evert_epark.jpeg" alt="Water distribution at public parks">
+        <div class="gallery-overlay">
+          <span>Public Parks & Event Locations</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/metro_station.jpeg" alt="Water distribution at metro stations">
+        <div class="gallery-overlay">
+          <span>Metro Station Activations</span>
+        </div>
+      </div>
+
+      <div class="gallery-item large">
+        <img src="assets/images/public_park.jpeg" alt="Water distribution in community parks">
+        <div class="gallery-overlay">
+          <span>Community Spaces & Public Grounds</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     </section>
      <!-- </div>

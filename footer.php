@@ -28,7 +28,7 @@
 
         <!-- SOCIAL -->
         <div class="social-links">
-          <a href="#" aria-label="Instagram">IG</a>
+          <a href="https://www.instagram.com/muftwaterdotcom?igsh=MTJ4eHkxYWhodHM1dA%3D%3D&utm_source=qr" aria-label="Instagram">IG</a>
           <a href="#" aria-label="LinkedIn">IN</a>
           <a href="#" aria-label="Twitter">X</a>
           <a href="#" aria-label="YouTube">YT</a>
@@ -43,7 +43,7 @@
           <ul>
             <li><a href="#about">About Muftwater</a></li>
             <li><a href="index.php#impact">Our Impact</a></li>
-            <li><a href="#locations">Water Locations</a></li>
+            <li><a href="water_location.php">Water Locations</a></li>
             <li><a href="careers.php">Careers</a></li>
           </ul>
         </div>
@@ -58,7 +58,7 @@
           </ul>
         </div>
 
-        <div class="footer-column">
+        <!-- <div class="footer-column">
           <h4>Support</h4>
           <ul>
             <li><a href="#faq">FAQs</a></li>
@@ -66,7 +66,16 @@
             <li><a href="#privacy">Privacy Policy</a></li>
             <li><a href="#terms">Terms & Conditions</a></li>
           </ul>
-        </div>
+        </div> -->
+        <div class="footer-column">
+  <h4>Support</h4>
+  <ul>
+    <li><a href="faq.php#">FAQs</a></li>
+    <li><a href="contact-us.php">Contact Us</a></li>
+    <li><a href="privacy.php">Privacy Policy</a></li>
+    <li><a href="term_condition.php">Terms & Conditions</a></li>
+  </ul>
+</div>
 
       </div>
     </div>

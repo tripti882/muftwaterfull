@@ -126,7 +126,7 @@
             <ul class="nav-links">
                 <li><a href="index.php#home">Home</a></li>
                 <li><a href="advertise.php">Advertise</a></li>
-                <li><a href="index.php#impact">Impact</a></li>
+                <!-- <li><a href="index.php#impact">Impact</a></li> -->
                 <li><a href="distribute.php">Distribute</a></li>
                 <li><a href="contact-us.php" class="active">Contact</a></li>
             </ul>
@@ -280,6 +280,19 @@
                 alert('Unable to submit your message right now. Please try again later.');
             }
         });
+    
+    </script>
+<!-- Footer -->
+<div id="footer"></div>
+
+<script>
+  fetch("footer.php")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
     </script>
 </body>
 </php>

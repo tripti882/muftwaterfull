@@ -364,12 +364,16 @@ function initMobileMenu() {
             <ul>
                 <li><a href="index.php#home">Home</a></li>
                  <li><a href="advertise.php">Advertise</a></li>
-                <li><a href="index.php#impact">Impact</a></li>
                 <li><a href="distribute.php">Distribute</a></li>
                 <li><a href="contact-us.php">Contact</a></li>
                 <li><a href="index.php#subscribe" class="mobile-cta">Get a quote</a></li>
             </ul>
         `;
+                          // <li><a href="index.php#impact">Impact</a></li>
+
+
+                    
+
          //Add styles dynamically
                 const style = document.createElement('style');
                 style.textContent = `
@@ -623,3 +627,4 @@ window.addEventListener('load', () => {
         }, index * 100);
     });
 });
+
