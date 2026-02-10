@@ -130,7 +130,7 @@
                 <li><a href="distribute.php">Distribute</a></li>
                 <li><a href="contact-us.php" class="active">Contact</a></li>
             </ul>
-            <a href="index.php#subscribe" class="nav-cta">Get a Quote</a>
+            <a href="advertise.php#quote" class="nav-cta">Get a Quote</a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>

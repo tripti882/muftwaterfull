@@ -30,7 +30,7 @@
                 <li><a href="distribute.php">Distribute</a></li>
                 <li><a href="contact-us.php">Contact</a></li>
             </ul>
-            <a href="#quote" class="nav-cta">Get a Quote</a>
+            <a href="advertise.php#quote" class="nav-cta">Get a Quote</a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -53,7 +53,7 @@
                 <p class="adv-hero-subtitle">
                     Receive meaningful impressions and utilize the greatest brand loyalty platform in the ad industry
                 </p>
-                <a href="#quote" class="btn btn-primary btn-lg">
+                <a href="advertise.php#quote" class="btn btn-primary btn-lg">
                     <span>Get a Quote</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -187,7 +187,7 @@
                         <li>✓ Cost-effective branding</li>
                         <li>✓ High recall impact</li>
                     </ul>
-                    <a href="#quote" class="btn btn-outline">Get a Quote</a>
+                    <a href="advertise.php#quote" class="btn btn-outline">Get a Quote</a>
                 </div>
             </div>
 
@@ -206,7 +206,7 @@
                         <li>✓ Premium look & feel</li>
                         <li>✓ Highest engagement</li>
                     </ul>
-                    <a href="#quote" class="btn btn-primary">Get a Quote</a>
+                    <a href="advertise.php#quote" class="btn btn-primary">Get a Quote</a>
                 </div>
             </div>
 
@@ -224,7 +224,7 @@
                         <li>✓ Ideal for homes & offices</li>
                         <li>✓ Strong brand recall</li>
                     </ul>
-                    <a href="#quote" class="btn btn-outline">Get a Quote</a>
+                    <a href="advertise.php#quote" class="btn btn-outline">Get a Quote</a>
                 </div>
             </div>
 

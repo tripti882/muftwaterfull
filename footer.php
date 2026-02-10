@@ -41,7 +41,7 @@
         <div class="footer-column">
           <h4>Company</h4>
           <ul>
-            <li><a href="#about">About Muftwater</a></li>
+            <li><a href="about.php">About Muftwater</a></li>
             <li><a href="index.php#impact">Our Impact</a></li>
             <li><a href="water_location.php">Water Locations</a></li>
             <li><a href="careers.php">Careers</a></li>
@@ -51,7 +51,7 @@
         <div class="footer-column">
           <h4>Get Involved</h4>
           <ul>
-            <li><a href="distribute.php">Get a Quote</a></li>
+            <li><a href="advertise.php#quote">Get a Quote</a></li>
             <li><a href="advertise.php">Advertise With Us</a></li>
             <li><a href="distribute.php">Distribute Water</a></li>
             <li><a href="#partner">Partner With Us</a></li>

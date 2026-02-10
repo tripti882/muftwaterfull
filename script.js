@@ -244,7 +244,7 @@ document.addEventListener('keydown', (e) => {
 //                         <li><a href="#advertise">Advertise</a></li>
 //                         <li><a href="distribute.html">Distribute</a></li>
 //                         <li><a href="contact-us.html">Contact</a></li>
-//                         <li><a href="#subscribe" class="mobile-cta">Get a quote</a></li>
+//                         <li><a href="advertise.php#quote" class="mobile-cta">Get a quote</a></li>
 //                     </ul>
 //                 `;
                 
@@ -356,7 +356,7 @@ function initMobileMenu() {
         //         <li><a href="#advertise">Advertise</a></li>
         //         <li><a href="distribute.php">Distribute</a></li>
         //         <li><a href="contact-us.php">Contact</a></li>
-        //         <li><a href="#subscribe" class="mobile-cta">Get a quote</a></li>
+        //         <li><a href="advertise.php#quote" class="mobile-cta">Get a quote</a></li>
         //     </ul>
         // `;
         // Use full URLs so navigation works correctly from all pages
@@ -366,7 +366,7 @@ function initMobileMenu() {
                  <li><a href="advertise.php">Advertise</a></li>
                 <li><a href="distribute.php">Distribute</a></li>
                 <li><a href="contact-us.php">Contact</a></li>
-                <li><a href="index.php#subscribe" class="mobile-cta">Get a quote</a></li>
+                <li><a href="advertise.php#quote" class="mobile-cta">Get a quote</a></li>
             </ul>
         `;
                           // <li><a href="index.php#impact">Impact</a></li>
