@@ -9,33 +9,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-/* SMALL HERO */
-/* .hero.small-hero{
-  min-height:140px;
-  padding:30px 0; */
 
-/* } */
+/* HERO */
 .hero.small-hero{
   min-height:140px;
   padding:0;
   display:flex;
-  align-items:center;   /* vertical center */
-  justify-content:center; /* horizontal center */
+  align-items:center;
+  justify-content:center;
   text-align:center;
 }
 
-
-/* REMOVE GAP BETWEEN HERO & FAQ */
 .hero.small-hero + .faq{
   margin-top:0;
   padding-top:20px;
 }
 
-/* FAQ STYLE */
-.faq-accordion{max-width:900px;margin:auto}
+/* FAQ */
+.faq-accordion{
+  max-width:900px;
+  margin:auto;
+}
+
 .faq-box{
   background:#fff;
   border-radius:10px;
@@ -43,6 +40,7 @@
   box-shadow:0 4px 12px rgba(0,0,0,0.05);
   overflow:hidden;
 }
+
 .faq-question{
   width:100%;
   background:none;
@@ -54,32 +52,36 @@
   cursor:pointer;
   position:relative;
 }
+
 .faq-question::after{
   content:"+";
   position:absolute;
   right:22px;
   font-size:1.6rem;
-  transition:.3s;
+  transition:transform .3s ease;
 }
+
 .faq-question.active::after{
   content:"−";
   transform:rotate(180deg);
 }
+
 .faq-answer{
   max-height:0;
   overflow:hidden;
-  transition:max-height .3s ease;
+  transition:max-height .4s ease;
 }
+
 .faq-answer p{
   padding:0 24px 20px;
   color:#555;
   line-height:1.6;
 }
 
-/* SPACE BEFORE FOOTER */
 .faq.section-padding{
   padding-bottom:80px;
 }
+
 </style>
 </head>
 
@@ -89,25 +91,15 @@
 <nav class="navbar">
   <div class="nav-container">
     <a href="#" class="logo">
-      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
-        <path d="M20 8C20 8 12 16 12 22C12 26.4183 15.5817 30 20 30C24.4183 30 28 26.4183 28 22C28 16 20 8 20 8Z" fill="currentColor"/>
-      </svg>
       <span>Muftwater</span>
     </a>
-            <ul class="nav-links">
-                <li><a href="index.php#home">Home</a></li>
-                <li><a href="advertise.php">Advertise</a></li>
-                <!-- <li><a href="index.php#impact">Impact</a></li> -->
-                 <li><a href="distribute.php" class="active">Distribute</a></li>
-                <li><a href="contact-us.php">Contact</a></li>
-            </ul>
-            <a href="advertise.php#quote" class="nav-cta">Get a Quote</a>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <ul class="nav-links">
+      <li><a href="index.php#home">Home</a></li>
+      <li><a href="advertise.php">Advertise</a></li>
+      <li><a href="distribute.php">Distribute</a></li>
+      <li><a href="contact-us.php">Contact</a></li>
+    </ul>
+    <a href="advertise.php#quote" class="nav-cta">Get a Quote</a>
   </div>
 </nav>
 
@@ -210,61 +202,40 @@
 
 <div id="footer"></div>
 
+
+<div id="footer"></div>
+
 <script>
-fetch("footer.php").then(r=>r.text()).then(d=>footer.innerHTML=d);
+fetch("footer.php")
+  .then(r => r.text())
+  .then(d => document.getElementById("footer").innerHTML = d);
 </script>
 
-<!-- <script>
-document.querySelectorAll(".faq-question").forEach(btn=>{
-  btn.onclick=()=>{
-    const ans = btn.nextElementSibling;
-    const open = btn.classList.contains("active");
+<!-- ACCORDION SCRIPT -->
+<script>
+document.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", function () {
 
-    document.querySelectorAll(".faq-answer").forEach(a=>a.style.maxHeight=null);
-    document.querySelectorAll(".faq-question").forEach(q=>q.classList.remove("active"));
+    const answer = this.nextElementSibling;
+    const isOpen = this.classList.contains("active");
 
-    if(!open){
-      btn.classList.add("active");
-      ans.style.maxHeight = ans.scrollHeight + "px";
+    // Close all
+    document.querySelectorAll(".faq-answer").forEach(a => {
+      a.style.maxHeight = null;
+    });
+
+    document.querySelectorAll(".faq-question").forEach(q => {
+      q.classList.remove("active");
+    });
+
+    // Open clicked one
+    if (!isOpen) {
+      this.classList.add("active");
+      answer.style.maxHeight = answer.scrollHeight + "px";
     }
-  }
+  });
 });
-</script> --> 
-<!-- <script src="script.js"></script>
-    <script>
-        document.getElementById('distributeForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-
-            const form = this;
-            const formData = new FormData(form);
-
-            try {
-                const response = await fetch('submit_distribute.php', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const result = await response.json();
-
-                if (response.ok && result.success) {
-                    // Show success modal and reset form
-                    document.getElementById('successModal').classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                    form.reset();
-                } else {
-                    const msg = result && result.message ? result.message : 'An error occurred while submitting your request.';
-                    alert(msg);
-                    if (result && result.errors) {
-                        alert(result.errors.join('\n'));
-                    }
-                }
-            } catch (error) {
-                console.error('Error submitting distribute request:', error);
-                alert('Unable to submit your request right now. Please try again later.');
-            }
-        });
-    </script> -->
-<script src="script.js"></script>
+</script>
 
 </body>
 </html>
